@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Rienda FZB 1988-2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #1a1a1a;
+            color: #e8e8e8;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #333;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 400;
+            color: #d4af37;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #999;
+            font-style: italic;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .stat-card {
+            background: #252525;
+            padding: 30px;
+            border-left: 3px solid #d4af37;
+            transition: transform 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 300;
+            color: #d4af37;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section {
+            background: #252525;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .years {
+            color: #ccc;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .content-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+            color: #ccc;
+        }
+        
+        .content-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .content-list strong {
+            color: #d4af37;
+            margin-right: 10px;
+            min-width: 120px;
+            display: inline-block;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Histórico Rienda FZB</h1>
+            <p class="subtitle">1988 — 2025</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">529</span>
+                <span class="stat-label">Registros</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">221</span>
+                <span class="stat-label">Campeones</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">38</span>
+                <span class="stat-label">Años</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Cobertura Temporal</h2>
+            <p class="years">
+                1988 • 1990 • 1991 • 1993 • 1995–1999 • 2002–2010 • 2012 • 2014–2025
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Contenido</h2>
+            <ul class="content-list">
+                <li><strong>Podio</strong>Top 3 de cada año (Categoría A/Única)</li>
+                <li><strong>Histórico</strong>529 registros completos de finales</li>
+                <li><strong>Campeones</strong>Todos los campeones nacionales</li>
+                <li><strong>Jinetes</strong>Ranking de 210 jinetes</li>
+                <li><strong>Caballos</strong>400 ejemplares con genealogía completa</li>
+                <li><strong>Padres</strong>191 padres destacados</li>
+                <li><strong>Expositores</strong>306 expositores rankeados</li>
+            </ul>
+        </div>
+        
+        <footer>
+            Base de datos histórica — Campeonato Nacional de Rienda FZB
+        </footer>
+    </div>
+</body>
+</html>
