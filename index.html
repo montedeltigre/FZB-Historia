@@ -267,23 +267,20 @@
     
     <script>
         function showTab(tabName) {
-            // Ocultar todos los contenidos
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.remove('active');
             });
             
-            // Desactivar todos los tabs
             document.querySelectorAll('.tab').forEach(tab => {
                 tab.classList.remove('active');
             });
             
-            // Activar el tab clickeado
             document.getElementById(tabName).classList.add('active');
             event.target.classList.add('active');
         }
         
         // Cargar datos del podio
-        fetch('FZB Histórico - Aumentado.json')
+        fetch('datos.json')
             .then(response => response.json())
             .then(data => {
                 const tbody = document.getElementById('podio-body');
@@ -304,7 +301,7 @@
                 podios.forEach(record => {
                     const row = document.createElement('tr');
                     
-                    // Si cambió el año, agregar fila separadora
+                    // Si cambió el año, agregar clase especial
                     if (currentYear !== record.Año) {
                         currentYear = record.Año;
                         row.classList.add('year-group');
